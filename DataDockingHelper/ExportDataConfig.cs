@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataDockingHelper
-{
+{ 
     /// <summary>
     /// 在导出表时候，需要传递的配置参数
     /// </summary>
