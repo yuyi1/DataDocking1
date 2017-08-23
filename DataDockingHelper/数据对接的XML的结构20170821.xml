@@ -1,0 +1,46 @@
+<DataBase>
+  <Table tableName="A01">
+    <!--表名-->
+    <!--1.字段类型开始-->
+    <Fields>
+      <!--1.1 字段的集合-->
+      <Field type="string">A0184</Field>
+      <Field type="int">A0101</Field>
+    </Fields>
+    <!--1.字段类型结束-->
+
+    <!--2.配置文件开始-->
+    <Config>
+      <FieldOrder>A0184|A0101</FieldOrder>
+      <!--2.1 插入的时候，字段的排序-->
+    </Config>
+    <!--2.配置文件结束-->
+
+    <!--3.数据行开始-->
+    <Datas>
+      <!--3.1注意点：需要注意特殊符号-->
+      <Row>
+        <!--3.2单行的数据-->
+        <ColumnData>422432199303112412</ColumnData>
+        <ColumnData>张三</ColumnData>
+      </Row>
+      <Row>
+        <ColumnData>422432199303112512</ColumnData>
+        <ColumnData>李四</ColumnData>
+      </Row>
+    </Datas>
+    <!--3.数据行结束-->
+  </Table>
+</DataBase>
+
+<!--
+	1.如何解决内外网中数据对接的问题?
+		解：采用组织XML的结构(XML的结构见上面的结构)
+		
+	2.如何解决对接过程中，数据量大的问题
+		解：采用SqlBuckCopy的来插入数据
+		备注：a.如何组织 SqlBuckCopy 中的DataTable 参考:http://blog.csdn.net/jasonleesjtu/article/details/7585111
+		
+	3.C#中采用XDocument来操作XML
+		解：详细可以参考【果壳中的C#】
+-->
