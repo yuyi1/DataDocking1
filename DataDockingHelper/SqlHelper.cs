@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Dapper;
 
 namespace DataDockingHelper
-{
+{ 
     public class SqlHelper
     {
         public static readonly string connstr = ConfigurationManager.ConnectionStrings["GBXRDB_GY"].ConnectionString;
